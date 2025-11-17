@@ -1,0 +1,5 @@
+[
+  {"id":"M1","status":"running","temperature":78,"vibration":0.4,"last_seen":"2025-11-17T08:00:00"},
+  {"id":"M2","status":"running","temperature":125,"vibration":1.5,"last_seen":"2025-11-17T08:01:00"},
+  {"id":"M3","status":"stopped","temperature":50,"vibration":0.2,"last_seen":"2025-11-17T07:55:00"}
+]

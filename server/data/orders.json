@@ -1,0 +1,5 @@
+[
+  {"order_id":"O101","stage":"Welding","progress":60,"due_in_hours":4},
+  {"order_id":"O102","stage":"Assembly","progress":20,"due_in_hours":1},
+  {"order_id":"O103","stage":"Painting","progress":90,"due_in_hours":0.5}
+]

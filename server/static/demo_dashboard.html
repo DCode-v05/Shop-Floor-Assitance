@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Agentic PoC Demo</title></head>
+<body>
+<h1>Agentic PoC Logs</h1>
+<pre id="logs">loading...</pre>
+<script>
+async function fetchLogs(){
+  const r = await fetch('/logs');
+  const j = await r.json();
+  document.getElementById('logs').innerText = JSON.stringify(j.slice(0,50), null, 2);
+}
+setInterval(fetchLogs, 3000);
+fetchLogs();
+</script>
+</body>
+</html>
