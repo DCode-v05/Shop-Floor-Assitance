@@ -58,16 +58,28 @@ Navigate to the root directory (where `requirements.txt` is located):
 # env\Scripts\activate
 
 pip install -r requirements.txt
+
+# Create environment file
+cp .env.example .env
+# Open .env and add your API keys (OpenAI, Pinecone, Groq, etc.)
+
 ```
 
-### 3. Frontend Setup
+### 3. Chatbot Setup (Optional)
+If you want to use the RAG chatbot features, you need to set up the Pinecone index:
+```bash
+# Ensure PINECONE_API_KEY is set in your .env file
+python setup_chatbot_index.py
+```
+
+### 4. Frontend Setup
 Navigate to the frontend directory:
 ```bash
 cd frontend
 npm install
 ```
 
-### 4. Run the Application
+### 5. Run the Application
 
 **Start the Backend:**
 ```bash
@@ -148,8 +160,10 @@ Shop-Floor-Assitance/
 │   ├── main.py
 │   └── realtime.py
 │
+├── .env.example            # Environment variables template
 ├── .gitignore
 ├── requirements.txt        # Python dependencies
+├── setup_chatbot_index.py  # Pinecone index setup script
 └── README.md               # Project documentation
 ```
 
