@@ -109,8 +109,8 @@ There are no benchmark/performance numbers here — it's a PoC, not a tuned syst
 
 ### Installation
 ```bash
-git clone https://github.com/DCode-v05/Shop-Floor-Assitance.git
-cd Shop-Floor-Assitance
+git clone https://github.com/DCode-v05/Shop-Floor-Assistance.git
+cd Shop-Floor-Assistance
 
 # Backend deps
 pip install -r requirements.txt
@@ -154,7 +154,7 @@ The API serves on `http://localhost:8000` and the dashboard on `http://localhost
 ## Project Structure
 
 ```
-Shop-Floor-Assitance/
+Shop-Floor-Assistance/
 ├── server/                      # FastAPI backend
 │   ├── main.py                  # App, REST + WS endpoints, startup tasks
 │   ├── config.py                # Env config (models, flags, paths)
